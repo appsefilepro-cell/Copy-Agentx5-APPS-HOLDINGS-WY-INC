@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-12-14 04:51:35",
+  "tests": [
+    {
+      "test": "Environment Configuration",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": ".env file found"
+    },
+    {
+      "test": "Required Dependencies",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "All dependencies installed"
+    },
+    {
+      "test": "Package Structure",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "All __init__.py files present"
+    },
+    {
+      "test": "Trading Risk Profiles",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "All 3 profiles configured"
+    },
+    {
+      "test": "Backtesting Engine",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Backtesting Engine initialized"
+    },
+    {
+      "test": "Zapier MCP Connection",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Zapier MCP configured"
+    },
+    {
+      "test": "Agent 3.0 Orchestrator",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Agent 3.0 initialized successfully"
+    },
+    {
+      "test": "Candlestick Pattern Analyzer",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Pattern analysis completed"
+    },
+    {
+      "test": "Forensic Data Analyzer",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Loaded 3 cases"
+    },
+    {
+      "test": "Grant Pipeline Manager",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Grant Pipeline Manager initialized"
+    },
+    {
+      "test": "Remediation Engine",
+      "status": "\u2705 PASS",
+      "passed": true,
+      "message": "Remediation Engine initialized"
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0,
+    "pass_rate": 100.0
+  }
+}
