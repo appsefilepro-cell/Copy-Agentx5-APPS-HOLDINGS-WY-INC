@@ -1,0 +1,107 @@
+{
+  "client_name": "Thurman Malik Robinson Jr. & APPS Holdings WY Inc.",
+  "client_type": "individual_and_business",
+  "total_cases": 10,
+  "master_case_list": [
+    {
+      "number": 1,
+      "caption": "Estate of Thurman Earl Robinson Sr., Decedent",
+      "jurisdiction": "Los Angeles County Superior Court",
+      "claims": ["Probate Administration", "Financial Elder Abuse", "Conversion"],
+      "priority": "URGENT",
+      "keywords": ["probate", "elder abuse", "Fatimah Calvin Moore", "estate", "insurance fraud"],
+      "incident_date": "2025-02-15",
+      "notes": "Time-sensitive probate with elder abuse allegations. $25K+ misappropriated."
+    },
+    {
+      "number": 2,
+      "caption": "Estate of Rosetta Burnett Stuckey, Decedent",
+      "jurisdiction": "Los Angeles County Superior Court",
+      "claims": ["Reverse Mortgage Fraud", "Elder Abuse", "Quiet Title"],
+      "priority": "HIGH",
+      "keywords": ["reverse mortgage", "fraud", "elder abuse", "property", "Rosetta Burnett"],
+      "incident_date": "2020-01-01",
+      "notes": "Challenge fraudulent reverse mortgage on $300K property. Hidden medical records."
+    },
+    {
+      "number": 3,
+      "caption": "Estate of Grover Burnett Singer - Property Recovery",
+      "jurisdiction": "Multiple Counties - California",
+      "claims": ["Quiet Title", "Fraud", "Conversion", "Unjust Enrichment"],
+      "priority": "HIGH",
+      "keywords": ["property recovery", "22 properties", "LLCs", "Grover Burnett", "shelf corporation"],
+      "incident_date": "1980-01-01",
+      "notes": "Recovery of 22 properties held by different LLCs. Burnett Realty World Inc."
+    },
+    {
+      "number": 4,
+      "caption": "Estate of Vinniervinny Richardson (Maternal Grandmother)",
+      "jurisdiction": "TBD - Needs Research",
+      "claims": ["Probate Administration"],
+      "priority": "MEDIUM",
+      "keywords": ["probate", "Vinniervinny Richardson", "maternal grandmother"],
+      "incident_date": "Unknown",
+      "notes": "Maternal grandmother probate - needs death records and asset research"
+    },
+    {
+      "number": 5,
+      "caption": "Cryptocurrency Recovery - Missing $42,000 from Coinbase Pro",
+      "jurisdiction": "Federal (CFAA)",
+      "claims": ["Theft", "Unauthorized Computer Access", "Conversion", "Negligence"],
+      "priority": "HIGH",
+      "keywords": ["cryptocurrency", "Coinbase", "theft", "blockchain", "bitcoin", "ethereum"],
+      "incident_date": "2024-06-16",
+      "notes": "Missing $42K from Coinbase Pro. Need blockchain verification to identify destination wallet."
+    },
+    {
+      "number": 6,
+      "caption": "Conservatorship of Linnette Karen Richardson",
+      "jurisdiction": "TBD - County of Residence",
+      "claims": ["Conservatorship of Person", "Conservatorship of Estate"],
+      "priority": "MEDIUM",
+      "keywords": ["conservatorship", "mother", "Linnette Richardson"],
+      "incident_date": "2025-01-01",
+      "notes": "Mother needs conservatorship. Related to Vinniervinny Richardson estate."
+    },
+    {
+      "number": 7,
+      "caption": "Identity Theft Investigation - Chesterfield, Virginia DBA",
+      "jurisdiction": "Virginia / Federal",
+      "claims": ["Identity Theft", "Trademark Infringement", "Unfair Business Practices"],
+      "priority": "MEDIUM",
+      "keywords": ["identity theft", "Virginia", "DBA", "Thurman Malik Robinson", "fraud"],
+      "incident_date": "2024-01-01",
+      "notes": "Potential fraudulent DBA in Chesterfield, VA using TMR name. No registered DBA found."
+    },
+    {
+      "number": 8,
+      "caption": "Willie Burnett & George Burnett Estate - Arkansas Farms",
+      "jurisdiction": "McGehee, Arkansas",
+      "claims": ["Heirs Property Rights", "Quiet Title", "Mineral Rights", "Water Rights"],
+      "priority": "LOW",
+      "keywords": ["Arkansas", "farms", "Willie Burnett", "George Burnett", "water rights", "mineral rights"],
+      "incident_date": "1950-01-01",
+      "notes": "3 farms in McGehee, AR. George was Mason. Willie had 12 children including Rosetta."
+    },
+    {
+      "number": 9,
+      "caption": "APPS Holdings WY Inc. - Corporate Compliance",
+      "jurisdiction": "Wyoming / Texas",
+      "claims": ["Business Operations"],
+      "priority": "LOW",
+      "keywords": ["Wyoming corporation", "APPS Holdings", "compliance"],
+      "incident_date": "2024-01-01",
+      "notes": "Maintain Wyoming corporation in good standing. Annual reports and registered agent."
+    },
+    {
+      "number": 10,
+      "caption": "DIU TAXES - Business Operations",
+      "jurisdiction": "Los Angeles / Houston",
+      "claims": ["Business Operations"],
+      "priority": "LOW",
+      "keywords": ["tax preparation", "DIU TAXES", "EIN 81-2065087", "PTIN"],
+      "incident_date": "2016-01-01",
+      "notes": "Tax preparation business. EIN: 81-2065087. PTIN: P01742431."
+    }
+  ]
+}
