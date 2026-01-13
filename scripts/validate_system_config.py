@@ -12,6 +12,10 @@ from pathlib import Path
 from typing import Dict, Any
 
 
+# Constants
+SUMMARY_MAX_LENGTH = 50
+
+
 class AgentX5ConfigLoader:
     """Load and validate Agent X5.0 configuration files."""
     
@@ -102,7 +106,7 @@ class AgentX5ConfigLoader:
             
             miracle = persona_config.get('miracle_directive', {})
             if miracle:
-                print(f"  - Miracle Directive: {miracle.get('goal', 'Not defined')[:50]}...")
+                print(f"  - Miracle Directive: {miracle.get('goal', 'Not defined')[:SUMMARY_MAX_LENGTH]}...")
             
             return True
         else:
