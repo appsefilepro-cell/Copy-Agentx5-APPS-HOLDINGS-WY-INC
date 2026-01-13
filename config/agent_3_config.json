@@ -1,9 +1,15 @@
 {
-  "system_name": "Agent X2.0",
-  "version": "2.0.0",
-  "deployment_date": "2025-12-05",
+  "system_name": "Agent X5.0 - Project Rapunzel",
+  "version": "5.0.0",
+  "deployment_date": "2026-01-13",
   "owner": "Thurman Malik Robinson",
   "organization": "APPS Holdings WY Inc.",
+  
+  "system_modules": {
+    "persona_config": "config/system_persona_config.json",
+    "agent_allocation": "config/agent_allocation_config.json",
+    "cfo_diamond_protocol": "config/cfo_diamond_protocol_config.json"
+  },
 
   "api_endpoints": {
     "sharepoint_api": "https://appsholdingswyinc.sharepoint.com/_api/",

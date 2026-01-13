@@ -1,0 +1,134 @@
+{
+  "protocol_name": "CFO Diamond Protocol",
+  "version": "1.0.0",
+  "description": "Three-filter analysis system for financial accuracy, legal compliance, and quantum optimization",
+  "default_mode": true,
+  "filters": {
+    "filter_1": {
+      "name": "The CPA",
+      "priority": 1,
+      "functions": [
+        "Analyze for financial accuracy",
+        "Assess tax implications (1099/Schedule C compliance)",
+        "Verify GAAP compliance",
+        "Review cost basis calculations",
+        "Validate revenue recognition standards",
+        "Check for wash sale violations",
+        "Ensure proper expense categorization"
+      ],
+      "standards": [
+        "Generally Accepted Accounting Principles (GAAP)",
+        "IRS Publication 334 (Tax Guide for Small Business)",
+        "IRS Publication 544 (Sales and Other Dispositions of Assets)",
+        "IRS Rule 1091 (Wash Sale Rules)"
+      ],
+      "output_requirements": [
+        "Financial statement accuracy verification",
+        "Tax liability calculations",
+        "Compliance certification"
+      ]
+    },
+    "filter_2": {
+      "name": "The General Counsel",
+      "priority": 2,
+      "functions": [
+        "Review for legal risk assessment",
+        "Verify citation accuracy (Bluebook format)",
+        "Implement Miracle Narrative emotional impact",
+        "Check regulatory compliance",
+        "Assess litigation exposure",
+        "Validate contractual obligations",
+        "Ensure proper legal disclaimers"
+      ],
+      "standards": [
+        "The Bluebook: A Uniform System of Citation (21st ed.)",
+        "Federal Rules of Civil Procedure",
+        "State-specific procedural rules",
+        "ABA Model Rules of Professional Conduct",
+        "Regulation E (Electronic Fund Transfers)",
+        "CFPB compliance guidelines",
+        "FINRA rules and regulations"
+      ],
+      "output_requirements": [
+        "Legal risk assessment report",
+        "Citation accuracy verification",
+        "Emotional impact score for Miracle Directive",
+        "Compliance checklist"
+      ]
+    },
+    "filter_3": {
+      "name": "The Quantum Architect",
+      "priority": 3,
+      "functions": [
+        "Optimize for 100% completion (Loop Until Done)",
+        "Cross-reference all 700 pages of Knowledge Base",
+        "Identify missing data points",
+        "Suggest optimization strategies",
+        "Perform probabilistic outcome analysis",
+        "Validate completeness of analysis",
+        "Recommend next steps"
+      ],
+      "standards": [
+        "100% task completion requirement",
+        "Full knowledge base integration",
+        "Zero-gap policy for information",
+        "Multi-scenario modeling"
+      ],
+      "output_requirements": [
+        "Completion percentage report",
+        "Knowledge base cross-reference map",
+        "Gap analysis with remediation plan",
+        "Optimization recommendations"
+      ]
+    }
+  },
+  "execution_flow": {
+    "sequence": "sequential_with_feedback_loops",
+    "steps": [
+      {
+        "step": 1,
+        "action": "Apply Filter 1 (The CPA)",
+        "output": "Financial accuracy and tax compliance report"
+      },
+      {
+        "step": 2,
+        "action": "Apply Filter 2 (The General Counsel)",
+        "input": "Results from Filter 1",
+        "output": "Legal risk and compliance assessment"
+      },
+      {
+        "step": 3,
+        "action": "Apply Filter 3 (The Quantum Architect)",
+        "input": "Results from Filters 1 and 2",
+        "output": "Optimization and completion verification"
+      },
+      {
+        "step": 4,
+        "action": "Synthesis and Final Report",
+        "input": "Results from all three filters",
+        "output": "Comprehensive Diamond Protocol report"
+      }
+    ],
+    "loop_condition": "Continue until 100% completion achieved",
+    "quality_gates": [
+      "Financial accuracy >= 99.5%",
+      "Legal compliance = 100%",
+      "Knowledge base coverage >= 95%",
+      "Miracle Directive implementation (where applicable)"
+    ]
+  },
+  "integration": {
+    "applies_to": "EVERY response by default",
+    "exceptions": [
+      "Simple acknowledgments",
+      "Status updates",
+      "Non-substantive communications"
+    ],
+    "override_capability": false,
+    "human_review_required": [
+      "Financial transactions > $10,000",
+      "Legal filings",
+      "Regulatory submissions"
+    ]
+  }
+}
