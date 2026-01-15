@@ -3,3 +3,6 @@ requests==2.31.0
 python-docx
 numpy
 pandas
+python-dotenv
+PyMuPDF
+openpyxl
