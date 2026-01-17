@@ -253,11 +253,14 @@ class DemoTradingIntegration:
         return results
 
     def _test_quantum_ai(self) -> Dict[str, Any]:
-        """Test Quantum AI integration"""
+        """Test Quantum AI integration with reproducible test data"""
         try:
             import numpy as np
             
-            # Create test market data
+            # Set seed for reproducible testing
+            np.random.seed(42)
+            
+            # Create test market data with seeded random values
             market_data = {
                 'volatility': 0.25,
                 'momentum': 0.5,

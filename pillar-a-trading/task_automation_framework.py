@@ -66,14 +66,26 @@ class TaskAutomationFramework:
     Executes 100 predetermined tasks in a loop with monitoring
     """
 
-    def __init__(self, max_tasks: int = 100):
-        """Initialize Task Automation Framework"""
+    def __init__(self, max_tasks: int = 100, logs_dir: Optional[Path] = None):
+        """
+        Initialize Task Automation Framework
+        
+        Args:
+            max_tasks: Maximum number of tasks to execute
+            logs_dir: Optional custom logs directory path. 
+                     Defaults to repository logs directory if not specified.
+        """
         self.max_tasks = max_tasks
         self.tasks: List[Task] = []
         self.completed_tasks = 0
         self.failed_tasks = 0
         self.total_execution_time = 0.0
-        self.logs_dir = Path(__file__).parent.parent / 'logs'
+        
+        # Use custom logs dir or default to repository logs
+        if logs_dir:
+            self.logs_dir = Path(logs_dir)
+        else:
+            self.logs_dir = Path(__file__).parent.parent / 'logs'
         self.logs_dir.mkdir(exist_ok=True)
         
         logger.info("=" * 70)

@@ -157,6 +157,13 @@ class SandboxEnvironmentManager:
         """
         Activate a single demo/paper trading account
         
+        Note: This is a sandbox/demo implementation that validates account configuration.
+        For production use with live APIs, implement:
+        1. Broker API connection
+        2. Account credential verification
+        3. Trading session initialization
+        4. Risk parameter configuration
+        
         Args:
             account: Account configuration dictionary
             
