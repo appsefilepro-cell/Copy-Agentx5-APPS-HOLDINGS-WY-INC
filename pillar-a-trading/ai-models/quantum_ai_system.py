@@ -146,8 +146,10 @@ class QuantumDecisionEngine:
         chosen_decision['quantum_coherence'] = float(state.coherence)
         chosen_decision['quantum_enhanced'] = True
 
-        logger.info(f"🎲 Quantum decision: {chosen_decision.get('action', 'UNKNOWN')} " +
-                    f"(P={state.probabilities[chosen_index]:.2%}, Coherence={state.coherence:.2%})")
+        logger.info(
+            f"🎲 Quantum decision: {chosen_decision.get('action', 'UNKNOWN')} "
+            f"(P={state.probabilities[chosen_index]:.2%}, Coherence={state.coherence:.2%})"
+        )
 
         return chosen_decision
 
@@ -469,8 +471,10 @@ class QuantumAISystem:
             'recommendation': quantum_decision.get('action', 'HOLD')
         }
 
-        logger.info(f"✅ Quantum analysis complete: {result['recommendation']} " +
-                    f"(Confidence: {result['confidence_level']:.2%})")
+        logger.info(
+            f"✅ Quantum analysis complete: {result['recommendation']} "
+            f"(Confidence: {result['confidence_level']:.2%})"
+        )
 
         return result
 
