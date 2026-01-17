@@ -40,7 +40,7 @@ class TestQuantumDecisionEngine:
             {'action': 'HOLD', 'confidence': 0.8}
         ]
         state = engine.create_superposition(decisions)
-        
+
         assert isinstance(state, QuantumState)
         assert len(state.amplitudes) == 3
         assert len(state.probabilities) == 3
@@ -55,13 +55,13 @@ class TestQuantumDecisionEngine:
             {'action': 'SELL', 'confidence': 0.6}
         ]
         state = engine.create_superposition(decisions)
-        
+
         market_data = {
             'volatility': 0.2,
             'momentum': 0.5,
             'volume_ratio': 1.2
         }
-        
+
         new_state = engine.quantum_interference(state, market_data)
         assert isinstance(new_state, QuantumState)
         assert len(new_state.probabilities) == 2
@@ -76,7 +76,7 @@ class TestQuantumDecisionEngine:
             {'action': 'HOLD', 'confidence': 0.8}
         ]
         state = engine.create_superposition(decisions)
-        
+
         chosen_index = engine.measure(state)
         assert 0 <= chosen_index < 3
 
@@ -93,7 +93,7 @@ class TestQuantumDecisionEngine:
             'momentum': 0.5,
             'volume_ratio': 1.2
         }
-        
+
         result = engine.decide(decisions, market_data)
         assert 'action' in result
         assert result['action'] in ['BUY', 'SELL', 'HOLD']
@@ -115,7 +115,7 @@ class TestQuantumMachineLearning:
         """Test feature entanglement"""
         ml = QuantumMachineLearning()
         features = np.random.randn(50, 10)
-        
+
         entangled = ml.quantum_feature_entanglement(features)
         assert entangled.shape == features.shape
 
@@ -124,7 +124,7 @@ class TestQuantumMachineLearning:
         ml = QuantumMachineLearning()
         data = np.linspace(0, 1, 100)
         patterns = ['BULLISH_MOMENTUM', 'BEARISH_MOMENTUM', 'CONSOLIDATION']
-        
+
         scores = ml.quantum_pattern_recognition(data, patterns)
         assert len(scores) == 3
         for pattern in patterns:
@@ -134,17 +134,17 @@ class TestQuantumMachineLearning:
     def test_quantum_train_predict(self):
         """Test training and prediction"""
         ml = QuantumMachineLearning()
-        
+
         # Generate synthetic training data
         n_samples = 100
         n_features = 10
         X_train = np.random.randn(n_samples, n_features)
         y_train = np.random.choice([0, 1, 2], n_samples)
-        
+
         # Train
         ml.quantum_train(X_train, y_train)
         assert len(ml.learned_patterns) > 0
-        
+
         # Predict
         X_test = np.random.randn(n_features)
         label, confidence = ml.quantum_predict(X_test)
@@ -163,13 +163,13 @@ class TestQuantumRealTimeProcessor:
     def test_quantum_parallel_analysis(self):
         """Test parallel analysis of data streams"""
         processor = QuantumRealTimeProcessor()
-        
+
         data_streams = [
             {'source': 'Technical', 'data': np.random.randn(50).tolist()},
             {'source': 'Fundamental', 'data': np.random.randn(50).tolist()},
             {'source': 'Sentiment', 'data': np.random.randn(50).tolist()}
         ]
-        
+
         results = processor.quantum_parallel_analysis(data_streams)
         assert 'timestamp' in results
         assert 'streams_processed' in results
@@ -208,7 +208,7 @@ class TestQuantumAISystem:
     def test_analyze_market(self):
         """Test complete market analysis"""
         system = QuantumAISystem(QuantumVersion.V4_0)
-        
+
         market_data = {
             'volatility': 0.25,
             'momentum': 0.6,
@@ -220,9 +220,9 @@ class TestQuantumAISystem:
                 {'source': 'Sentiment', 'data': np.random.randn(50).tolist()}
             ]
         }
-        
+
         result = system.analyze_market(market_data)
-        
+
         # Verify result structure
         assert 'version' in result
         assert result['version'] == '4.0'
@@ -235,7 +235,7 @@ class TestQuantumAISystem:
         assert 'recommendation' in result
         assert result['recommendation'] in ['BUY', 'SELL', 'HOLD']
         assert 'phd_algorithms_used' in result
-        
+
         # Verify decision structure
         decision = result['decision']
         assert 'action' in decision
@@ -246,16 +246,16 @@ class TestQuantumAISystem:
     def test_train_predict(self):
         """Test training and prediction workflow"""
         system = QuantumAISystem(QuantumVersion.V4_0)
-        
+
         # Generate synthetic training data
         n_samples = 100
         n_features = 10
         X_train = np.random.randn(n_samples, n_features)
         y_train = np.random.choice([0, 1, 2], n_samples)
-        
+
         # Train
         system.train(X_train, y_train)
-        
+
         # Predict
         X_test = np.random.randn(n_features)
         label, confidence = system.predict(X_test)
