@@ -3,14 +3,14 @@
   "name": "Legal Automation",
   "total_tasks": 100,
   "categories": [
-    "Discovery Management",
     "Legal Research",
-    "Compliance Monitoring",
-    "Document Generation",
     "Client Communication",
-    "Performance Tracking",
     "Court Filing",
-    "Case Management"
+    "Compliance Monitoring",
+    "Discovery Management",
+    "Case Management",
+    "Performance Tracking",
+    "Document Generation"
   ],
   "tasks": [
     {
