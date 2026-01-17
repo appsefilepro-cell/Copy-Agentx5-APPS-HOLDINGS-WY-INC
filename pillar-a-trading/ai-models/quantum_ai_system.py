@@ -14,10 +14,9 @@ Features:
 """
 
 import numpy as np
-import json
 import logging
 from datetime import datetime
-from typing import Dict, List, Any, Tuple, Optional
+from typing import Dict, List, Any, Tuple
 from dataclasses import dataclass
 from enum import Enum
 
@@ -93,7 +92,6 @@ class QuantumDecisionEngine:
         # Extract market indicators
         volatility = market_data.get('volatility', 0.2)
         momentum = market_data.get('momentum', 0.0)
-        volume = market_data.get('volume_ratio', 1.0)
 
         # Create interference pattern
         interference = np.exp(1j * (momentum * volatility * np.pi))
@@ -148,8 +146,10 @@ class QuantumDecisionEngine:
         chosen_decision['quantum_coherence'] = float(state.coherence)
         chosen_decision['quantum_enhanced'] = True
 
-        logger.info(f"🎲 Quantum decision: {chosen_decision.get('action', 'UNKNOWN')} "
-                   f"(P={state.probabilities[chosen_index]:.2%}, Coherence={state.coherence:.2%})")
+        logger.info(
+            f"🎲 Quantum decision: {chosen_decision.get('action', 'UNKNOWN')} "
+            f"(P={state.probabilities[chosen_index]:.2%}, Coherence={state.coherence:.2%})"
+        )
 
         return chosen_decision
 
@@ -280,7 +280,7 @@ class QuantumMachineLearning:
                 inv_cov = np.linalg.inv(pattern['covariance'] + np.eye(len(pattern['mean'])) * 1e-6)
                 distance = np.sqrt(np.dot(np.dot(diff, inv_cov), diff))
                 overlap = 1 / (1 + distance)  # Convert distance to similarity
-            except:
+            except (np.linalg.LinAlgError, ValueError):
                 overlap = 0.0
 
             if overlap > max_overlap:
@@ -471,8 +471,10 @@ class QuantumAISystem:
             'recommendation': quantum_decision.get('action', 'HOLD')
         }
 
-        logger.info(f"✅ Quantum analysis complete: {result['recommendation']} "
-                   f"(Confidence: {result['confidence_level']:.2%})")
+        logger.info(
+            f"✅ Quantum analysis complete: {result['recommendation']} "
+            f"(Confidence: {result['confidence_level']:.2%})"
+        )
 
         return result
 
@@ -518,7 +520,7 @@ def main():
 
         result = system.analyze_market(market_data)
 
-        print(f"\n📊 Result:")
+        print("\n📊 Result:")
         print(f"   Recommendation: {result['recommendation']}")
         print(f"   Confidence: {result['confidence_level']:.2%}")
         print(f"   Quantum Coherence: {result['coherence']:.2%}")
