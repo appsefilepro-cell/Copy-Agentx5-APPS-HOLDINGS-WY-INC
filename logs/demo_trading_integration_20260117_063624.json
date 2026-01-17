@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-01-17T06:36:10.327792",
+  "phases": {
+    "activation": {
+      "timestamp": "2026-01-17T06:36:10.327852",
+      "components": [
+        {
+          "name": "Sandbox Compatibility",
+          "status": "PASS",
+          "details": {
+            "timestamp": "2026-01-17T06:36:10.327908",
+            "checks": [
+              {
+                "name": "Configuration File",
+                "status": "PASS",
+                "critical": true
+              },
+              {
+                "name": "Accounts Configured",
+                "status": "PASS",
+                "critical": true
+              },
+              {
+                "name": "Demo/Paper Accounts Available",
+                "status": "PASS",
+                "critical": true,
+                "details": "21 accounts found"
+              },
+              {
+                "name": "Risk Profiles",
+                "status": "PASS",
+                "critical": false
+              }
+            ],
+            "compatible": true
+          }
+        },
+        {
+          "name": "Account Activation",
+          "status": "SUCCESS",
+          "details": {
+            "total_activated": 21,
+            "total_failed": 0,
+            "paper_accounts": 7,
+            "sandbox_accounts": 14,
+            "demo_accounts": 0,
+            "total_capital": 1235550
+          }
+        },
+        {
+          "name": "Strategy Testing",
+          "status": "SUCCESS",
+          "details": {
+            "tested": 2,
+            "long_strategy": {
+              "status": "TESTED",
+              "action": "BUY",
+              "confidence": 95.0
+            },
+            "short_strategy": {
+              "status": "TESTED",
+              "action": "HOLD",
+              "confidence": 0.4
+            }
+          }
+        },
+        {
+          "name": "Task Generation",
+          "status": "SUCCESS",
+          "details": {
+            "total_tasks": 100,
+            "task_categories": 8
+          }
+        },
+        {
+          "name": "Quantum AI",
+          "status": "SUCCESS",
+          "details": {
+            "success": true,
+            "recommendation": "HOLD",
+            "confidence": 0.33333333333333337,
+            "version": "4.0"
+          }
+        }
+      ]
+    },
+    "trading_test": {
+      "timestamp": "2026-01-17T06:36:10.344574",
+      "tests": [
+        {
+          "scenario": "Bullish Market",
+          "signals": [
+            {
+              "strategy": "Long",
+              "action": "BUY",
+              "confidence": 95.0
+            },
+            {
+              "strategy": "Short",
+              "action": "HOLD",
+              "confidence": 0.0
+            }
+          ]
+        },
+        {
+          "scenario": "Bearish Market",
+          "signals": [
+            {
+              "strategy": "Long",
+              "action": "HOLD",
+              "confidence": 7.000000000000001
+            },
+            {
+              "strategy": "Short",
+              "action": "HOLD",
+              "confidence": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    "automation": {
+      "timestamp": "2026-01-17T06:36:24.142588",
+      "total_tasks": 100,
+      "completed": 100,
+      "failed": 0,
+      "success_rate": 100.0,
+      "total_execution_time": 13.797296047210693,
+      "average_task_time": 0.12773191690444946,
+      "loops_completed": 1
+    }
+  }
+}
